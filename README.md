@@ -1,7 +1,6 @@
-[![Build Status](https://runbot.odoo.com/runbot/badge/flat/1/master.svg)](https://runbot.odoo.com/runbot)
-[![Tech Doc](https://img.shields.io/badge/master-docs-875A7B.svg?style=flat&colorA=8F8F8F)](https://www.odoo.com/documentation/14.0)
-[![Help](https://img.shields.io/badge/master-help-875A7B.svg?style=flat&colorA=8F8F8F)](https://www.odoo.com/forum/help-1)
-[![Nightly Builds](https://img.shields.io/badge/master-nightly-875A7B.svg?style=flat&colorA=8F8F8F)](https://nightly.odoo.com/)
+<div align="center">
+  <img src="https://badgen.net/github/stars/Mountant2021/document?icon=github&color=4ab8a1">&emsp;<img src="https://badgen.net/github/forks/Mountant2021/document?icon=github&color=4ab8a1">&emsp;<a href="https://github.com/Mountant2021/document/releases"><img src=https://img.shields.io/github/downloads/Mountant2021/document/total></a>&emsp;<a href="https://github.com/HypoX64/DeepMosaics/releases"><img src=https://img.shields.io/github/v/release/hypox64/DeepMosaics></a>&emsp;<img src=https://img.shields.io/github/license/Mountant2021/document>
+</div>
 
 Install Odoo
 ========
