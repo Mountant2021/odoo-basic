@@ -1,0 +1,41 @@
+<odoo>
+	<record id="people_view_form" model="ir.ui.view">
+		<field name="name">people.form</field>
+		<field name="model">people</field>
+		<field name="arch" type="xml">
+			<form string="People">
+				<sheet>
+					<group>
+						<group>
+							<field name="name" />
+							<field name="cv1" />
+							<field name="cv2" />
+							<field name="avatar" widget='image'/>
+						</group>
+						<group>
+							<field name="gender" />
+							<field name="information" />
+						</group>
+					</group>
+					<notebook>
+						<page string="Description">
+							<field name="description" />
+						</page>
+						<page string="Description 2">
+							<field name="description2" />
+						</page>
+					</notebook>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+	<record id="people_action" model="ir.actions.act_window">
+		<field name="name">People</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">people</field>
+	</record>
+
+	<menuitem id="menu_field" name="Field" />
+	<menuitem id="menu_people" name="Advance Field" parent="menu_field" action='people_action' />
+</odoo>
