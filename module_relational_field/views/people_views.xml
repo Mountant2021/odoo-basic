@@ -1,0 +1,27 @@
+<odoo>
+	<record id="people_view_form" model="ir.ui.view">
+		<field name="name">people.form</field>
+		<field name="model">people</field>
+		<field name="arch" type="xml">
+			<form string="People">
+				<sheet>
+					<group>
+						<field name="name" />
+						<group>
+							<field name="house_ids" />
+						</group>
+						<group></group>
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+	<record id="people_action" model="ir.actions.act_window">
+		<field name="name">People</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">people</field>
+	</record>
+
+	<menuitem id="menu_people" name="xxx2Many Field" parent="menu_field" action='people_action' />
+</odoo>
