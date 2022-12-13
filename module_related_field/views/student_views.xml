@@ -1,0 +1,24 @@
+<odoo>
+	<record id="student_view_form" model="ir.ui.view">
+		<field name="name">student.form</field>
+		<field name="model">student</field>
+		<field name="arch" type="xml">
+			<form string="student">
+				<sheet>
+					<group>
+						<field name="people_id" />
+						<field name="name" />
+					</group>
+				</sheet>
+			</form>
+		</field>
+	</record>
+
+	<record id="student_action" model="ir.actions.act_window">
+		<field name="name">student</field>
+		<field name="type">ir.actions.act_window</field>
+		<field name="res_model">student</field>
+	</record>
+
+	<menuitem id="menu_student" name="Reference Field" parent="menu_field" action='student_action' />
+</odoo>
