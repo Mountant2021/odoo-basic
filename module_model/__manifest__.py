@@ -24,4 +24,5 @@
     ],
     # any module necessary for this one to work correctly
     'depends': ['base'],
+    'installable': False,
 }

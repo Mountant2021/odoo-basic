@@ -19,4 +19,5 @@
         'views/house_views.xml',
     ],
     'depends': ['base'],
+    'installable': False,
 }

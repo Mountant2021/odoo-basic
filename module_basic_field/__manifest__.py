@@ -17,4 +17,5 @@
         'views/people_views.xml',
     ],
     'depends': ['base'],
+    'installable': False,
 }

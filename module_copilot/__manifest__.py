@@ -21,4 +21,5 @@
             'module_copilot/static/src/js/module_copilot.js',
         ],
     },
+    'installable': False,
 }
