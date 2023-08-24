@@ -1,0 +1,15 @@
+<odoo>
+    <data noupdate="1">
+        <record id="people_1" model="people">
+            <field name="name">Salah</field>
+            <field name="gender">male</field>
+        </record>
+    </data>
+
+    <data noupdate="0">
+        <record id="people_2" model="people">
+            <field name="name">Mane</field>
+            <field name="gender">male</field>
+        </record>
+    </data>
+</odoo>
