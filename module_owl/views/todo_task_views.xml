@@ -1,0 +1,52 @@
+<odoo>
+    <!-- Tree view -->
+    <record id="view_todo_task_tree" model="ir.ui.view">
+        <field name="name">todo.task.tree</field>
+        <field name="model">todo.task</field>
+        <field name="arch" type="xml">
+            <tree string="To-Do Tasks">
+                <field name="name" />
+                <field name="user_id" widget="many2one_avatar_user" />
+                <field name="color" widget="color" />
+                <field name="is_done" widget="boolean_toggle" />
+            </tree>
+        </field>
+    </record>
+
+    <!-- Form view -->
+    <record id="view_todo_task_form" model="ir.ui.view">
+        <field name="name">todo.task.form</field>
+        <field name="model">todo.task</field>
+        <field name="arch" type="xml">
+            <form string="To-Do Tasks">
+                <sheet>
+                    <group>
+                        <field name="name" />
+                        <field name="user_id" />
+                        <field name="color" widget="color" />
+                        <field name="description" />
+                        <field name="is_done" widget="boolean_toggle" />
+                    </group>
+                </sheet>
+            </form>
+        </field>
+    </record>
+
+    <!-- Action -->
+    <record id="action_todo_task" model="ir.actions.act_window">
+        <field name="name">To-Do Tasks</field>
+        <field name="res_model">todo.task</field>
+        <field name="view_mode">tree,form</field>
+    </record>
+
+    <record id="action_todo_task_js" model="ir.actions.client">
+        <field name="name">To-Do Tasks JS</field>
+        <field name="tag">module_owl.action_todo_task_js</field>
+    </record>
+
+    <!-- Menu -->
+    <menuitem id="menu_todo_task_root" name="To-Do Tasks">
+        <menuitem action="action_todo_task" id="menu_todo_task" />
+        <menuitem id="menu_todo_task_js" action="action_todo_task_js"/>
+    </menuitem>
+</odoo>
