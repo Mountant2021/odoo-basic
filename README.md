@@ -3,4 +3,5 @@
 </div>
 
 Odoo With Mountain Coder
-==========
+========================
+<img width="1194" height="1031" alt="Odoo roadmap" src="https://github.com/user-attachments/assets/5c8bce99-3f66-45b3-bbd1-16e9be653e1e" />
